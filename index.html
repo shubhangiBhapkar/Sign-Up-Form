@@ -1,63 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
+    <title>Sign up</title>
+    <meta name="description"
+      content="A responsive user registration form with JavaScript validation for email, password, confirm password, radio buttons, and terms & conditions.">
+    <link rel="icon" type="image/png" href="signup.png">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <nav class="navbar">
-        <div class="links">
-            <ul>
-                <li>Home</li>
-                <li>About Us</li>
-                <li>Contact Us</li>
-            </ul>
+    <form id="sign-up">
+        <h1 style="color:white">Signup </h1>
+        <input type="text" id="username" placeholder="Full Name" required> <br>
+        <input type="email" id="email" placeholder="Email"  required><br>
+        <input type="password" id="pass" placeholder="Password" required><br>
+        <input type="password" id ="confirm-pass" placeholder="Confirm Password" required><br>
+        <input type="date" id="date" required><br>
+        <div class="radio-group">
+    <label>
+        <input type="radio" name="status" value="student">
+        Student
+    </label>
 
-        </div>
-        <button class="btn">Login</button>
-        <button class="btn">Sign Up</button>
-    </nav>
+    <label>
+        <input type="radio" name="status" value="employee">
+        Employee
+    </label>
+</div>
 
-    <main class="main">
-        <div class="form-content">
-            <h1>Sign Up Form</h1>
-            <form action="" method="post">
-                <input type="text" class="deco" placeholder="Full Name" required><br>
-                <input type="email" class="deco" placeholder="Email" required><br>
-                <input type="password" class="deco" placeholder="password" required><br>
-                <input type="password" class="deco" placeholder="Confirm Password" required><br>
-                <input type="date" class="deco"><br>
-                <label class="radio-label">
-                    <input type="radio" class="s-1" name="status" value="student" required>Student
-                    <input type="radio" class="s-1" name="status" value="Employee">Employee<br>
-                </label>
-                <label class="checkbox-label" required>
-                    <input type="checkbox" class="s-1" value="agree">I agree to all terms and conditions<br>
-                </label>
-                <button class="btn" value="Sign Up">Sign Up</button>
-            </form>
-        </div>
-    </main>
-
-    <footer class="footer">
-        <div class="footer-social">
-            <img src="https://cdn-icons-png.flaticon.com/128/4401/4401403.png">
-            <img src="https://cdn-icons-png.flaticon.com/128/4401/4401407.png">
-            <img src="https://cdn-icons-png.flaticon.com/128/4401/4401471.png">
-            <img src="https://cdn-icons-png.flaticon.com/128/4401/4401454.png">
-        </div>
-        <div class="footer-links">
-            <ul>
-                <li>Home</li>
-                <li>About Us</li>
-                <li>Contact Us</li>
-            </ul>
-        </div>
-    </footer>
+<div class="checkbox-group">
+    <label>
+        <input type="checkbox" id="terms">
+        I agree to the Terms and Conditions
+    </label>
+</div>
+        <input type="submit" id="btn" value="sign up">
+        </form>
+    <script src="script.js"></script>
 </body>
-
 </html>
